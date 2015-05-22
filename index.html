@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<title>Inbox - Vanilla Tasks</title>
+
+	<link type="text/css" rel="stylesheet" href="static/css/layout-default-latest.css" />
+
+    <link href="static/css/_style.css" rel="stylesheet">
+    <link href="static/css/editor.css" rel="stylesheet">
+
+	<script type="text/javascript" src="static/js/jquery-latest.js"></script>
+	<script type="text/javascript" src="static/js/jquery-ui-latest.js"></script>
+	<script type="text/javascript" src="static/js/jquery.layout-1.3.0.rc30.80.js"></script>
+	<script type="text/javascript" src="static/js/debug.js"></script>
+
+    <script type="text/javascript" src="static/js/marked.js"></script>
+    <script type="text/javascript" src="static/js/editor.js"></script>
+    <script type="text/javascript" src="static/js/client-ui.js"></script>
+
+
+    <link rel="stylesheet" href="static/css/default.css" id="theme_base">
+    <link rel="stylesheet" href="static/css/default.date.css" id="theme_date">
+    <link rel="stylesheet" href="static/css/default.time.css" id="theme_time">
+
+
+</head>
+<body>
+<div class="navigation">
+    <h1>Vanilla Tasks - Inbox</h1>
+</div>
+
+<!-- manually attach allowOverflow method to pane -->
+<div class="ui-layout-north" onmouseover="myLayout.allowOverflow('north')" onmouseout="myLayout.resetOverflow(this)">
+	Navigation
+</div>
+
+
+<div class="ui-layout-center">
+
+    <div class="mini-scroll">
+        <div class="checkbox-wrapper">
+            <a href="#" class="checkbox"></a>
+        </div>
+        <div class="content">
+            <h3 class="title">Make this into a web app</h3>
+            <h3 class="date">Thursday</h3>
+            <div class="details"><p>Cupcake ipsum dolor sit amet I love powder. Lollipop topping oat cake halvah. Wafer toffee sweet roll… </p></div>
+
+        </div>
+    </div>
+
+    <div class="mini-scroll">
+        <div class="checkbox-wrapper">
+            <a href="#" class="checkbox checked"></a>
+        </div>
+        <div class="content">
+            <h3 class="title">Make this into a web app</h3>
+            <h3 class="date">Thursday</h3>
+            <div class="details"><p>Cupcake ipsum dolor sit amet I love powder. Lollipop topping oat cake halvah. Wafer toffee sweet roll… </p></div>
+
+        </div>
+    </div>
+
+    <div class="mini-scroll selected">
+        <div class="checkbox-wrapper">
+            <a href="#" class="checkbox"></a>
+        </div>
+        <div class="content">
+            <h3 class="title">Make this into a web app</h3>
+            <h3 class="date">Thursday</h3>
+            <div class="details"><p>Cupcake ipsum dolor sit amet I love powder. Lollipop topping oat cake halvah. Wafer toffee sweet roll… </p></div>
+        </div>
+    </div>
+
+    <a href="#" class="edit-button"></a>
+    <div class="edit-shadow shadow-bottom"></div>
+</div>
+
+<!-- allowOverflow auto-attached by option: west__showOverflowOnHover = true -->
+<div class="ui-layout-west">
+    <ul class="list-names">
+        <li><a href="#" class="active">Inbox</a></li>
+        <li><a href="#">Shopping</a></li>
+        <li><a href="#">Assignments</a></li>
+        <li><a href="#">Gardening</a></li>
+    </ul>
+    <a href="#" class="plus-button"></a>
+    <div class="plus-shadow shadow-bottom"></div>
+</div>
+<div class="ui-layout-east">
+	<div class="title">
+        <input class="title-input" type="text" value="Make this into a web app">
+        <a href="#" class="checkbox"></a>
+	</div>
+    <div class="details">
+        <textarea id="editor"></textarea>
+    </div>
+    <div class="date">
+        <span>Due date:</span>
+        <input class="date-input fieldset__input js__datepicker" type="text" placeholder="15 July, 2014">
+    </div>
+    <div class="time">
+        <span>Time: </span>
+        <input class="time-input fieldset__input js__timepicker" type="text" placeholder="9:30PM">
+    </div>
+
+
+</div>
+
+
+<script src="static/js/picker.js"></script>
+<script src="static/js/picker.date.js"></script>
+<script src="static/js/picker.time.js"></script>
+<script src="static/js/legacy.js"></script>
+<script src="static/js/demo.js"></script>
+<script src="static/js/rainbow.js"></script>
+
+</body>
+</html>
